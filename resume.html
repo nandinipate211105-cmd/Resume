@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini Sharad Pate - Resume</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #d3edff;
+        color: #1a365d; 
+        line-height: 1.6;
+        padding: 40px 20px;
+    }
+
+    .resume-container {
+        max-width: 950px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-top: 10px solid #1a365d;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name-title h1 {
+        font-size: 52px;
+        line-height: 0.9;
+        font-weight: 800;
+        letter-spacing: -1px;
+        color: #1a365d;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        color: #3182ce;
+        margin-top: 15px;
+        font-weight: 400;
+    }
+
+    .profile-frame {
+        width: 150px;
+        height: 150px;
+        border: 4px solid #1a365d;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+        text-align: right;
+    }
+
+    .main-divider {
+        border: 0;
+        height: 3px;
+        background: #1a365d;
+        margin: 25px 0;
+    }
+
+    .section-divider {
+        border: 0;
+        height: 1.5px;
+        background: #cbd5e0;
+        margin: 20px 0;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        color: #1a365d;
+        font-size: 20px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #3182ce;
+        display: inline-block;
+        padding-bottom: 3px;
+    }
+
+    h3 {
+        font-size: 17px;
+        color: #2c5282;
+        margin-bottom: 5px;
+    }
+
+    .summary p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 4px;
+    }
+
+    ul li::before {
+        content: "•";
+        color: #3182ce;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+
+    .project-item, .edu-item, .skill-group {
+        margin-bottom: 15px;
+    }
+
+    .skill-group h3 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+
+    .skill-group p {
+        font-size: 14px;
+        color: #4a5568;
+    }
+
+    .declaration h2 {
+        font-size: 18px;
+    }
+
+    .declaration p {
+        font-size: 13px;
+        font-style: italic;
+        color: #4a5568;
+    }
+
+    .signature {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .sig-name {
+        font-weight: bold;
+        border-top: 1px solid #1a365d;
+        padding-top: 5px;
+        min-width: 150px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .header-content, .main-grid {
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .contact-info p {
+            text-align: center;
+        }
+    }
+    .profile-frame {
+        margin: 20px auto;
+    }
+
+    .signature-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .details p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .sig-wrapper {
+        text-align: center;
+        width: 200px;
+    }
+
+    .signature-img {
+        width: 150px;      
+        height: auto;
+        display: block;
+        margin: 0 auto -10px auto; 
+        mix-blend-mode: multiply; 
+    }
+
+    .sig-name {
+        font-weight: bold;
+        border-top: 2px solid #1a365d;
+        padding-top: 5px;
+        color: #1a365d;
+        font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+        .signature-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .sig-wrapper {
+            margin-top: 20px;
+        }
+    }
+    </style>   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-content">
+                <div class="name-title">
+                    <h1>NANDINI <br> SHARAD <br> PATE</h1>
+                    <p class="subtitle">Computer Engineering Student</p>
+                </div>
+                <div class="profile-frame">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHuTw_BqRxanw/profile-displayphoto-scale_400_400/B4DZ92crRFJ4Ag-/0/1784398657673?e=1786579200&v=beta&t=Oy5AyNOCnPkSSThmJE9qQgvKsFFCEUT6eB8LlFfCNWE" alt="Nandini Sharad Pate" class="profile-img">
+                </div>
+                <div class="contact-info">
+                    <p><strong>(Email)</strong> nandinipate211105@gmail.com</p>
+                    <p><strong>(Phone)</strong> +91 9890597015</p>
+                    <p><strong>(LinkedIn)</strong> linkedin.com/in/nandini-pate</p>
+                    <p><strong>(GitHub)</strong> nandinipate211105-cmd</p>
+                </div>
+            </div>
+        </header>
+
+        <hr class="main-divider">
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Second-year Computer Engineering student passionate about full-stack web development, AI-powered applications, and problem-solving. Experienced in building scalable web solutions, participating in hackathons, and collaborating in team-based projects. Seeking opportunities to apply technical skills while continuously learning new technologies.</p>
+        </section>
+
+        <hr class="section-divider">
+
+        <div class="main-grid">
+            <div class="left-column">
+                <section>
+                    <h2>Education</h2>
+                    <div class="edu-item">
+                        <h3>Bachelor of Technology (Computer Engineering)</h3>
+                        <p class="institute">PCCOER | 2025–2029</p>
+                        <p>SGPA (term 1) : 9.68/10</p>
+                        <p>SGPA (term 2) : 8.41/10</p>
+                        <p><strong>CGPA : 9.05/10</strong></p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Projects</h2>
+                    <div class="project-item">
+                        <h3>1. AI Healthcare Assistant</h3>
+                        <ul>
+                            <li>AI-powered multilingual consultation.</li>
+                            <li>AI symptom analysis.</li>
+                            <li>Emergency support and health profiles.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>2. EduLens – Student Analytics</h3>
+                        <ul>
+                            <li>AI-powered student analytics.</li>
+                            <li>Firebase Authentication & Firestore.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>3. Online Book Store</h3>
+                        <ul>
+                            <li>Responsive bookstore website.</li>
+                            <li>Product browsing and search.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>4. Attendance Tracker</h3>
+                        <ul>
+                            <li>AI-powered student analytics.</li>
+                            <li>Firebase Authentication & Firestore.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Hackathons</h2>
+                    <ul>
+                        <li>Crescendo Hackathon Participant</li>
+                        <li>Built an AI-integrated website within 24 hours as part of a team.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section>
+                    <h2>Technical Skills</h2>
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <p>C, C++, Python, JavaScript</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, Tailwind CSS</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Backend</h3>
+                        <p>Node.js, Firebase Auth, MongoDB</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Database</h3>
+                        <p>Firebase Firestore, MySQL</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+                        <p>Git, GitHub, VS Code, Netlify</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Leadership & Activities</h2>
+                    <ul>
+                        <li>Hackathon participant</li>
+                        <li>Team collaboration and coordination</li>
+                        <li>Technical community involvement</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>Developed multiple web projects.</li>
+                        <li>Participated in national-level hackathons.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Certifications</h2>
+                    <p>Crescendo 2026 - 24 Hrs Hackathon</p>
+                </section>
+            </div>
+        </div>
+
+        <footer class="declaration">
+            <hr class="section-divider">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the information provided above is true to the best of my knowledge and belief. I am prepared to provide supporting documents for the same for Training & Placement purposes.</p>
+            
+            <div class="signature-container">
+                <div class="details">
+                    <p><strong>Date:</strong> 27 July 2026</p>
+                    <p><strong>Place:</strong> Pune, India</p>
+                </div>
+                <div class="sig-wrapper">
+                    <img src="signature.jpg" alt="Signature" class="signature-img">
+                    <p class="sig-name">Nandini Sharad Pate</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
